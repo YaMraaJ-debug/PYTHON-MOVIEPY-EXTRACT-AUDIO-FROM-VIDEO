@@ -7,7 +7,7 @@ def extract(video_path, audio_name, audio_format):
 	"""
 	video = VideoFileClip(video_path)
 	audio = video.audio
-	audio.write_audiofile(audio_name + '.' + audio_format)
+	audio.write_audiofile(f'{audio_name}.{audio_format}')
 
 try:
 	video_path = input('Video Path:\n'
